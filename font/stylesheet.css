@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'peace_sansregular' ;
+    src: url('peace_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ui.menu {
+  font-family: 'peace_sansregular' !important;
+}
+
+body {
+  font-family: 'peace_sansregular'
+}
+
+.item {
+  color: white !important;
+  font-size: clamp(10px, 2vw, 15px); !important;
+}
+.item:hover {
+  color: grey !important;
+  font-size: clamp(10px, 2vw, 15px); !important;
+}
+
+
+.ui.dropdown {
+    font-size: clamp(10px, 2vw, 15px); !important;
+}
+
+.ui.dropdown .item{
+  color: black !important;
+}
+.ui.dropdown .item:hover {
+  color: grey !important;
+  font-size: clamp(10px, 2vw, 15px); !important;
+}
+
+
+.ui.menu .item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ui.icon.menu .item {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.block {
+  height: 113px;
+}
