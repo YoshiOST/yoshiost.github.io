@@ -6,56 +6,56 @@
   <title>YoshiOST</title>
   <!-- You MUST include jQuery before Fomantic -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="font/stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <script src="js/fomantic.js"></script>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="../semantic/dist/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="font/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
-<body>
+<body style="background-image: url()">
+
   <div class="header">
-    <div class="ui top fixed borderless menu">
+    <div class="ui fixed top borderless menu">
       <div class="ui container">
         <div class="item">
           <a href="index.html">
-            <img id="top-logo" src="https://cdn.discordapp.com/attachments/1044438246282776648/1044438284434145290/Up_Close_Head.png">
+            <img class="grower" id="top-logo" src="https://cdn.discordapp.com/attachments/1044438246282776648/1044438284434145290/Up_Close_Head.png">
           </a>
         </div>
-        <div class="right menu">
+        <div class="right borderless menu">
           <div class="ui simple dropdown item">
             Music
             <i class="dropdown icon"></i>
             <div class="menu">
-              <a href="videogames.html"><div class="item">Video Games</div></a>
-              <a href="yoshiost.html"><div class="item">YoshiOST</div></a>
-              <div class="item">OSBooter</div>
-              <div class="item">Media</div>
-              <div class="item">Licensing</div>
-              <div class="item">Pricing</div>
+              <a href="videogames.html"><div class="hl item">Video Games</div></a>
+              <a href="yoshiost.html"><div class="hl item">YoshiOST</div></a>
+              <a href="osbooter.html"><div class="hl item">OSBooter</div></a>
+              <a href="music-media.html"><div class="hl item">Media</div></a>
+              <a href="license.html"><div class="hl item">Licensing</div></a>
+              <div class="hl item">Pricing</div>
             </div>
           </div>
           <div class="ui simple dropdown item">
             Games
             <i class="dropdown icon"></i>
             <div class="menu">
-              <div class="item">Speedruns</div>
-              <div class="item">Fishing Plus</div>
-              <div class="item">Link 4</div>
-              <div class="item">WordSniffer</div>
+              <div class="hl item">Speedruns</div>
+              <div class="hl item">Fishing Plus</div>
+              <div class="hl item">Link 4</div>
+              <div class="hl item">WordSniffer</div>
             </div>
           </div>
           <div class="ui simple dropdown item">
             Code
             <i class="dropdown icon"></i>
             <div class="menu">
-              <div class="item">Bible Shortcuts</div>
-              <div class="item">Waveform Macros</div>
-              <div class="item">MBC OpenLayers</div>
-              <div class="item">SE Commands</div>
+              <div class="hl item">Bible Shortcuts</div>
+              <div class="hl item">Waveform Macros</div>
+              <div class="hl item">MBC OpenLayers</div>
+              <div class="hl item">SE Commands</div>
             </div>
           </div>
         </div>
-        <div class="ui icon menu">
+        <div class="ui borderless icon menu">
           <a class="item" href="https://twitter.com/getYoshiOST">
             <i class="twitter icon"></i>
           </a>
@@ -75,17 +75,33 @@
       </div>
     </div>
   </div>
+  <div id="content" class="ui container">
+    <div class="grower ui centered horizontal card">
+  <div class="image">
+    <img src="https://cdn.discordapp.com/attachments/1044438246282776648/1044438284434145290/Up_Close_Head.png">
+  </div>
+  <div class="content">
+    <a class="header" href="https://twitter.com/getYoshiOST">YoshiOST</a>
+    <div class="meta">
+      <span class="date">YoshiOST#1520</span>
+    </div>
+    <div class="description">
+      Making music for <a href="https://twitter.com/RecallSoftware">@RecallSoftware</a>
+    </div>
+  </div>
+  <div class="extra content">
+  <a class="twitch icon" href="https://www.twitch.tv/yoshiost">
+  <i class="twitch icon"></i>
+  YoshiOST
+  </a>
+  </div>
+</div>
 
-  <body>
-    <div class="block">
-      <!-- pushes all content down -->
-    </div>
-    <div class="ui flyout">
-      ...
-    </div>
-    <div class="pusher">
-      Your site's actual content
-    </div>
-  </body>
+      
+  </div>
+  <div class="footer">
+
+  </div>
+  <script src="js/me.js"></script>
 </body>
 </html>

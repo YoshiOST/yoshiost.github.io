@@ -3,59 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YoshiOST</title>
+  <title>Video Game OST</title>
   <!-- You MUST include jQuery before Fomantic -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="font/stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <script src="js/fomantic.js"></script>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="../semantic/dist/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="font/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
-<body>
+<body style="background-image: url(img/3d-vgm-bg-fade.png)">
+
   <div class="header">
-    <div class="ui top fixed borderless menu">
+    <div class="ui fixed top borderless menu">
       <div class="ui container">
         <div class="item">
           <a href="index.html">
-            <img id="top-logo" src="https://cdn.discordapp.com/attachments/1044438246282776648/1044438284434145290/Up_Close_Head.png">
+            <img class="grower" id="top-logo" src="https://cdn.discordapp.com/attachments/1044438246282776648/1044438284434145290/Up_Close_Head.png">
           </a>
         </div>
-        <div class="right menu">
+        <div class="right borderless menu">
           <div class="ui simple dropdown item">
             Music
             <i class="dropdown icon"></i>
             <div class="menu">
-              <a href="videogames.html"><div class="item">Video Games</div></a>
-              <a href="yoshiost.html"><div class="item">YoshiOST</div></a>
-              <div class="item">OSBooter</div>
-              <div class="item">Media</div>
-              <div class="item">Licensing</div>
-              <div class="item">Pricing</div>
+              <a href="videogames.html"><div class="hl item">Video Games</div></a>
+              <a href="yoshiost.html"><div class="hl item">YoshiOST</div></a>
+              <a href="osbooter.html"><div class="hl item">OSBooter</div></a>
+              <a href="music-media.html"><div class="hl item">Media</div></a>
+              <a href="license.html"><div class="hl item">Licensing</div></a>
+              <div class="hl item">Pricing</div>
             </div>
           </div>
           <div class="ui simple dropdown item">
             Games
             <i class="dropdown icon"></i>
             <div class="menu">
-              <div class="item">Speedruns</div>
-              <div class="item">Fishing Plus</div>
-              <div class="item">Link 4</div>
-              <div class="item">WordSniffer</div>
+              <div class="hl item">Speedruns</div>
+              <div class="hl item">Fishing Plus</div>
+              <div class="hl item">Link 4</div>
+              <div class="hl item">WordSniffer</div>
             </div>
           </div>
           <div class="ui simple dropdown item">
             Code
             <i class="dropdown icon"></i>
             <div class="menu">
-              <div class="item">Bible Shortcuts</div>
-              <div class="item">Waveform Macros</div>
-              <div class="item">MBC OpenLayers</div>
-              <div class="item">SE Commands</div>
+              <div class="hl item">Bible Shortcuts</div>
+              <div class="hl item">Waveform Macros</div>
+              <div class="hl item">MBC OpenLayers</div>
+              <div class="hl item">SE Commands</div>
             </div>
           </div>
         </div>
-        <div class="ui icon menu">
+        <div class="ui borderless icon menu">
           <a class="item" href="https://twitter.com/getYoshiOST">
             <i class="twitter icon"></i>
           </a>
@@ -75,16 +75,102 @@
       </div>
     </div>
   </div>
-  <body>
-    <div class="block">
-      <!-- pushes all content down -->
-    </div>
-    <div class="ui flyout">
-      ...
-    </div>
-    <div class="pusher">
-      Your site's actual content
-    </div>
-  </body>
+  <div id="content" class="ui container">
+    <h1 class="ui center aligned header">Video Game OST</h1>
+<table class="ui selectable striped sortable table">
+  <thead>
+    <tr>
+      <th class="one wide"></th>
+      <th class="one wide">Date</th>
+      <th class="eight wide">Project</th>
+      <th class="six wide">Roles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>TBD</td>
+      <td><a href="https://twitter.com/RecallSoftware/status/1533116375790518272">Dragon Courier</a></td>
+      <td>Motion Graphics, Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/corgi-cove-sq.png" alt=""></td>
+      <td>TBD</td>
+      <td><a href="https://store.steampowered.com/app/2129850/Corgi_Cove/">Corgi Cove</a></td>
+      <td>Motion Graphics, Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/mida's-adventure-ost-small.png" alt=""></td>
+      <td>2022</td>
+      <td><a href="https://store.steampowered.com/app/1998420/Midas_Adventure/">Mida's Adventure</a> v1.1</td>
+      <td>Motion Graphics, Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/koala-in-a-hole-sq.png" alt=""></td>
+      <td>2020</td>
+      <td><a href="https://joelquey.itch.io/koala-in-the-hole">Koala in the Hole</a></td>
+      <td>3d Modelling, Level Design, Audio Programming, Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/let-there-be-light-small.png" alt=""></td>
+      <td>2019</td>
+      <td><a href="https://ldjam.com/events/ludum-dare/45/let-there-be-light-1">Let There Be Light</a></td>
+      <td>Programming, Art, Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/notaghost-sq.png" alt=""></td>
+      <td>2019</td>
+      <td><a href="https://joelquey.itch.io/notaghost">NotAGhost</a></td>
+      <td>Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/celestial-sq.png" alt=""></td>
+      <td>2019</td>
+      <td><a href="https://bionick7.itch.io/celestial">Celestial</a></td>
+      <td>Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/jumpy-ninja.png" alt=""></td>
+      <td>2019</td>
+      <td><a href="https://play.google.com/store/apps/details?id=com.nkdevelop.jumpyninja">Jumpy Ninja</a></td>
+      <td>Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2018</td>
+      <td>Rico Resa</td>
+      <td>Sound Design, Music Production</td>
+    </tr>
+    <tr>
+      <td><img class="ui mini image" src="img/word-sniffer-small.png" alt=""></td>
+      <td>2018</td>
+      <td>WordSniffer</td>
+      <td>Sound Design, Music Production, Lead Developer</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2016</td>
+      <td>Randomizer</td>
+      <td>Sound Design, Music Production, Lead Developer</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2015</td>
+      <td>CardFighter</td>
+      <td>Sound Design, Music Production, Lead Developer</td>
+    </tr>
+  </tbody>
+  <!-- <tfoot>
+  <tr><th>3 People</th>
+  <th>2 Approved</th>
+</tr></tfoot> -->
+</table>
+
+      
+  </div>
+  <div class="footer">
+
+  </div>
+  <script src="js/me.js"></script>
 </body>
 </html>
