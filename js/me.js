@@ -1,7 +1,29 @@
+function copyToClipboard(element) {
+// Get the text field
+var copyText = document.getElementById(element);
+
+// Select the text field
+copyText.select();
+copyText.setSelectionRange(0, 99999); // For mobile devices
+
+ // Copy the text inside the text field
+navigator.clipboard.writeText(copyText.value);
+
+// Alert the copied text
+$.toast({
+  class: 'teal',
+	position: 'bottom right',
+  showIcon: 'clipboard',
+  message:  '"' + copyText.value + '" was added to your clipboard',
+	showProgress: 'bottom'
+})
+;
+}
+
 /*
-	A simple, lightweight jQuery plugin for creating sortable tables.
-	https://github.com/kylefox/jquery-tablesort
-	Version 0.0.11
+A simple, lightweight jQuery plugin for creating sortable tables.
+https://github.com/kylefox/jquery-tablesort
+Version 0.0.11
 */
 
 (function($) {
@@ -23,17 +45,17 @@
 
 		sort: function(th, direction) {
 			var start = new Date(),
-				self = this,
-				table = this.$table,
-				rowsContainer = table.find('tbody').length > 0 ? table.find('tbody') : table,
-				rows = rowsContainer.find('tr').has('td, th'),
-				cells = rows.find(':nth-child(' + (th.index() + 1) + ')').filter('td, th'),
-				sortBy = th.data().sortBy,
-				sortedMap = [];
+			self = this,
+			table = this.$table,
+			rowsContainer = table.find('tbody').length > 0 ? table.find('tbody') : table,
+			rows = rowsContainer.find('tr').has('td, th'),
+			cells = rows.find(':nth-child(' + (th.index() + 1) + ')').filter('td, th'),
+			sortBy = th.data().sortBy,
+			sortedMap = [];
 
 			var unsortedValues = cells.map(function(idx, cell) {
 				if (sortBy)
-					return (typeof sortBy === 'function') ? sortBy($(th), $(cell), self) : sortBy;
+				return (typeof sortBy === 'function') ? sortBy($(th), $(cell), self) : sortBy;
 				return ($(this).data().sortValue != null ? $(this).data().sortValue : $(this).text());
 			});
 			if (unsortedValues.length === 0) return;
@@ -44,9 +66,9 @@
 				this.index = th.index();
 			}
 			else if (direction !== 'asc' && direction !== 'desc')
-				this.direction = this.direction === 'asc' ? 'desc' : 'asc';
+			this.direction = this.direction === 'asc' ? 'desc' : 'asc';
 			else
-				this.direction = direction;
+			this.direction = direction;
 
 			direction = this.direction == 'asc' ? 1 : -1;
 
@@ -130,4 +152,4 @@
 	};
 
 })(window.Zepto || window.jQuery);
-  $('table').tablesort();
+$('table').tablesort();

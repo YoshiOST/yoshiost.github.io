@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SE Commands</title>
+  <!-- You MUST include jQuery before Fomantic -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="../semantic/dist/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="font/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body style="background-image: url(img/yoshiost-bg.png)">
+  <div class="header">
+    <div class="ui fixed top borderless menu">
+      <div class="ui container">
+        <div class="item">
+          <a href="index.html">
+            <img class="grower" id="top-logo" src="https://cdn.discordapp.com/attachments/1044438246282776648/1044438284434145290/Up_Close_Head.png">
+          </a>
+        </div>
+        <div class="right borderless menu">
+          <div class="ui simple dropdown item">
+            Music
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="videogames.html"><div class="hl item">Video Games</div></a>
+              <a href="yoshiost.html"><div class="hl item">YoshiOST</div></a>
+              <a href="osbooter.html"><div class="hl item">OSBooter</div></a>
+              <a href="music-media.html"><div class="hl item">Media</div></a>
+              <a href="license.html"><div class="hl item">Licensing</div></a>
+              
+            </div>
+          </div>
+          <div class="ui simple dropdown item">
+            Games
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="https://www.speedrun.com/user/YoshiOST"><div class="hl item">Speedruns</div></a>
+              <a href="https://sites.google.com/view/fishingplus/fishingplus"><div class="hl item">Fishing Plus</div></a>
+              
+              
+            </div>
+          </div>
+          <div class="ui simple dropdown item">
+            Code
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="https://chrome.google.com/webstore/detail/bible-shortcuts/fdfkokekebedfliplbofjnejpjbohlkk"><div class="hl item">Bible Shortcuts</div></a>
+              <a href="https://github.com/OSBooter/Tracktion-WF-Macros"><div class="hl item">Waveform Macros</div></a>
+              <a href="https://sites.google.com/view/mbcmaps/mbc-maps"><div class="hl item">MBC OpenLayers</div></a>
+              <a href="secommands.html"><div class="hl item">SE Commands</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="ui borderless icon menu">
+          <a class="item" href="https://twitter.com/getYoshiOST">
+            <i class="twitter icon"></i>
+          </a>
+          <a class="item" href="https://www.twitch.tv/yoshiost">
+            <i class="twitch icon"></i>
+          </a>
+          <a class="item" href="https://www.youtube.com/@yoshiost">
+            <i class="youtube icon"></i>
+          </a>
+          <a class="item" href="https://www.instagram.com/yoshiost/">
+            <i class="instagram icon"></i>
+          </a>
+          <a class="item" href="https://www.tiktok.com/@yoshiost">
+            <i class="tiktok icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="ui container">
+    <h1 class="ui center aligned header">SE Commands</h1>
+<table class="ui selectable celled table">
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <table class="ui selectable celled table">
+          <tr>
+            <td>
+              <div class="ui action enabled input">
+                <input type="text" id="viewer" value="!level name 100">
+                <button class="ui teal right labeled icon button" onclick="copyToClipboard('viewer')">
+                  <i class="copy icon"></i>
+                  Copy
+                </button>
+              </div>
+            </td>
+            <td>viewer</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ui action enabled input">
+                <input type="text" id="subscriber" value="!level name 250">
+                <button class="ui teal right labeled icon button" onclick="copyToClipboard('subscriber')">
+                  <i class="copy icon"></i>
+                  Copy
+                </button>
+              </div>
+            </td>
+            <td>subscriber</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ui action enabled input">
+                <input type="text" id="regular" value="!level name 300">
+                <button class="ui teal right labeled icon button" onclick="copyToClipboard('regular')">
+                  <i class="copy icon"></i>
+                  Copy
+                </button>
+              </div>
+            </td>
+            <td>regular</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ui action enabled input">
+                <input type="text" id="moderator" value="!level name 500">
+                <button class="ui teal right labeled icon button" onclick="copyToClipboard('moderator')">
+                  <i class="copy icon"></i>
+                  Copy
+                </button>
+              </div>
+            </td>
+            <td>moderator</td>
+          </tr>
+        </table>
+      </td>
+      <td>set user to:</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui action enabled input">
+          <input type="text" id="command" value="!commands add">
+          <button class="ui teal right labeled icon button" onclick="copyToClipboard('command')">
+            <i class="copy icon"></i>
+            Copy
+          </button>
+        </div>
+      </td>
+      <td>add a command</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui action enabled input">
+          <input type="text" id="alias" value="!command alias add basecommand aliascommand1 aliascommand2">
+          <button class="ui teal right labeled icon button" onclick="copyToClipboard('alias')">
+            <i class="copy icon"></i>
+            Copy
+          </button>
+        </div>
+      </td>
+      <td>set an extra name for a command</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui action enabled input">
+          <input type="text" id="settitle" value="!settitle title">
+          <button class="ui teal right labeled icon button" onclick="copyToClipboard('settitle')">
+            <i class="copy icon"></i>
+            Copy
+          </button>
+        </div>
+      </td>
+      <td>Set the current title of the stream</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui action enabled input">
+          <input type="text" id="setgame" value="!setgame game">
+          <button class="ui teal right labeled icon button" onclick="copyToClipboard('setgame')">
+            <i class="copy icon"></i>
+            Copy
+          </button>
+        </div>
+      </td>
+      <td>set the current game category</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui action enabled input">
+          <input type="text" id="shoutout" value="!command add !so Check out ${1}, they are playing ${game ${1}} at https://twitch.tv/${channel ${1}}">
+          <button class="ui teal right labeled icon button" onclick="copyToClipboard('shoutout')">
+            <i class="copy icon"></i>
+            Copy
+          </button>
+        </div>
+      </td>
+      <td>!so channel</td>
+    </tr>
+  </tbody>
+</table>
+
+      
+  </div>
+  <div class="footer">
+  <script src="js/me.js"></script>
+  </div>
+</body>
+</html>
