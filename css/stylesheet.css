@@ -37,7 +37,6 @@ body{
   position: relative;
   color: #657153;
 }
-
 .hl::after {
   content: '';
   position: absolute;
@@ -63,4 +62,8 @@ body{
 .ui[class*="column"].grid>.column:not(.row), .ui[class*="column"].grid>.row>.column {
   display: flex;
   align-items: center;
+}
+
+body > div.header > div > div > div.ui.borderless.icon.menu {
+  background-color: white;
 }
