@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Licensing</title>
+  <title>Bible Plan Configurator</title>
   <!-- You MUST include jQuery before Fomantic -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
@@ -74,52 +74,69 @@
     </div>
   </div>
   <div id="content" class="ui container">
-    <h1 class="ui center aligned header">Licensing</h1>
-<div class="ui bulleted list">
-  <div class="item">
-    <div>When you buy any Andrew Cheung, YoshiOST or OSBooter music/media, it is for personal
-    entertainment use.</div>
-    <div class="list">
-      <div class="item">
-        You may <span class="ui large red text">NOT</span> sell it
-        as your own or misidentify who made the track or what the track name
-        is.
-      </div>
-      <div class="item">
-        You may <span class="ui large red text">NOT</span> Monetize any media with the
-        <span class="ui large red text">audio/video</span> in full or in
-        part.
-      </div>
-      <div class="item">
-        Do <span class="ui large red text">NOT</span> stream the song as background music for
-        livestreams or use in DJ sets (public performance) unless it is tracked as for
-        performance rights.
-      </div>
-      <div class="item">
-        The only <span class="ui large orange text">exceptions</span> are
-        for critique/journalism as examples (gist), however would <span class="ui large red text">exclude</span> using the
-        whole song straight or chopped up having nearly the full track (main
-        section).
-      </div>
-      <div class="item">
-        There are <span class="ui large blue text">licenses for commercial uses</span>, such
-        as <span class="ui large text">video games/movies/videos</span>.
-      </div>
-      <div class="item">
-        Alternatively you must
-        <span class="ui large blue text">get expressed written/typed permission</span>.
+    <h1 class="ui center aligned header">Bible Plan Configurator</h1>
+<div class="ui container">
+  <div class="ui segment">
+    <div class="ui fluid left icon input">
+      <input id="input-bot" type="text" placeholder="Discord Bot Name">
+      <i class="robot icon"></i>
+    </div>
+    <div class="ui fluid left icon input">
+      <input id="input-image" type="text" placeholder="Image Link">
+      <i class="image icon"></i>
+    </div>
+    <div class="ui fluid left icon input">
+      <input id="input-webhook" type="text" placeholder="Webhook URL">
+      <i class="chain icon"></i>
+    </div>
+    <div class="ui fluid left icon input">
+      <input id="input-csv" type="text" placeholder=".csv file">
+      <i class="scroll icon"></i>
+    </div>
+    <div class="ui calendar" id="standard_calendar">
+      <div class="ui input left icon">
+        <i class="calendar icon"></i>
+        <input id="input-calendar" type="text" placeholder="Starting Date">
       </div>
     </div>
+    <button class="ui button" onclick = "downloadFile()">
+      Generate
+    </button>
+    <script>
+    const downloadFile = () => {
+      const link = document.createElement("a");
+      const botname = document.querySelector("#input-bot").value || 'Plan Bot';
+      const image = document.querySelector("#input-image").value || 'https://cdn.pixabay.com/photo/2022/02/20/09/43/animal-7024108_960_720.png';
+      const webhook = document.querySelector("#input-webhook").value || 'https://discord.com/api/webhooks/a/b';
+      const mywebhook = webhook.split("/");
+      const webhookId = mywebhook[5];
+      const webhookToken = mywebhook[6];
+      const csvfile = document.querySelector("#input-csv").value || 'plan.csv';
+      var calendar = new Date(document.querySelector("#input-calendar").value);
+      if (isNaN(calendar))
+      {
+        calendar = new Date();
+      }
+      const content = '{ "hooks" : ['
+      + '{'
+      + '"botname": "' + botname + '",'
+      + '"image": "' + image + '",'
+      + '"webhookId": "'+ webhookId + '",'
+      + '"webhookToken": "'+ webhookToken + '",'
+      + '"csvfile": "'+ csvfile + '",'
+      + '"startdate": "'+ calendar.getTime()
+      + '"}]'
+      + '}';
+      const file = new Blob([content],{type: 'application/json'}
+      );
+      console.log(calendar.getTime());
+      link.href = URL.createObjectURL(file);
+      link.download = "config.json";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    };
+    </script>
   </div>
-</div>
-<a href="https://forms.gle/Kph9vVwc3mk4ZmRJ6">
-<button class="ui animated fade massive black fluid button">
-  <div class="visible content"><i class="icon file signature"></i>Licenses & Contact</div>
- <div class="hidden content">
-   Contact within the week
- </div>
-</button>
-</a>
 
       
   </div>
