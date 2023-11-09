@@ -154,3 +154,4 @@ Version 0.0.11
 })(window.Zepto || window.jQuery);
 $('table').tablesort();
 $('.ui.calendar').calendar();
+$('.ui.dropdown').dropdown();

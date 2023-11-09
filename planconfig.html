@@ -92,31 +92,50 @@
     <h1 class="ui center aligned header">Bible Plan Configurator</h1>
 <div class="ui container">
   <div class="ui segment">
-    <div class="ui fluid left icon input">
-      <input id="input-bot" type="text" placeholder="Discord Bot Name">
-      <i class="robot icon"></i>
+  <div class="ui fluid left icon input">
+    <input id="input-bot" type="text" placeholder="Discord Bot Name">
+    <i class="robot icon"></i>
+  </div>
+  <div class="ui fluid left icon input">
+    <input id="input-image" type="text" placeholder="Image Link">
+    <i class="image icon"></i>
+  </div>
+  <div class="ui fluid left icon input">
+    <input id="input-webhook" type="text" placeholder="Webhook URL">
+    <i class="chain icon"></i>
+  </div>
+  <div class="ui fluid left icon input">
+    <input id="input-csv" type="text" placeholder=".csv file">
+    <i class="scroll icon"></i>
+  </div>
+  <div class="ui calendar" id="standard_calendar">
+    <div class="ui fluid input left icon">
+      <i class="calendar icon"></i>
+      <input id="input-calendar" type="text" placeholder="Starting Date">
     </div>
-    <div class="ui fluid left icon input">
-      <input id="input-image" type="text" placeholder="Image Link">
-      <i class="image icon"></i>
+  </div>
+  <div class="ui fluid selection dropdown">
+    <input id="input-site" type="hidden" name="Web Link">
+    <i class="dropdown icon"></i>
+    <div class="default text">Web Link</div>
+    <div class="scrollhint menu">
+      <div class="item" data-value="LSB">read.lsbible.org</div>
+      <div class="item" data-value="biblegateway ESV">www.biblegateway.com(ESV)</div>
+      <div class="item" data-value="biblegateway LSB">www.biblegateway.com(LSB)</div>
+      <div class="item" data-value="biblegateway WEB">www.biblegateway.com(WEB)</div>
     </div>
-    <div class="ui fluid left icon input">
-      <input id="input-webhook" type="text" placeholder="Webhook URL">
-      <i class="chain icon"></i>
+  </div>
+  <div class="ui compact segment">
+    <div class="ui checkbox">
+      <input id="input-embed" type="checkbox">
+      <label>Show Embedded Links?</label>
     </div>
-    <div class="ui fluid left icon input">
-      <input id="input-csv" type="text" placeholder=".csv file">
-      <i class="scroll icon"></i>
-    </div>
-    <div class="ui calendar" id="standard_calendar">
-      <div class="ui input left icon">
-        <i class="calendar icon"></i>
-        <input id="input-calendar" type="text" placeholder="Starting Date">
-      </div>
-    </div>
+  </div>
+  <div class="ui wrapping spaced buttons">
     <button class="ui button" onclick = "downloadFile()">
       Generate
     </button>
+  </div>
     <script>
     const downloadFile = () => {
       const link = document.createElement("a");
@@ -152,6 +171,7 @@
     };
     </script>
   </div>
+</div>
 
       
   </div>
