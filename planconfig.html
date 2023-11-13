@@ -145,8 +145,11 @@
       const mywebhook = webhook.split("/");
       const webhookId = mywebhook[5];
       const webhookToken = mywebhook[6];
+      const site = document.querySelector("#input-site").value.match(/\S+/);
+      const version = document.querySelector("#input-site").value.match(/\S+$/);
+      const embed = document.querySelector("#input-embed").checked;
       const csvfile = document.querySelector("#input-csv").value || 'plan.csv';
-      var calendar = new Date(document.querySelector("#input-calendar").value);
+      var calendar = new Date(document.querySelector("#input-site").value);
       if (isNaN(calendar))
       {
         calendar = new Date();
@@ -158,17 +161,19 @@
       + '"webhookId": "'+ webhookId + '",'
       + '"webhookToken": "'+ webhookToken + '",'
       + '"csvfile": "'+ csvfile + '",'
-      + '"startdate": "'+ calendar.getTime()
+      + '"startdate": "'+ calendar.getTime() + '",'
+      + '"site": "'+ site + '",'
+      + '"version": "'+ version + '",'
+      + '"embed": "'+ embed
       + '"}]'
       + '}';
-      const file = new Blob([content],{type: 'application/json'}
-      );
+      const file = new Blob([content],{type: 'application/json'});
       console.log(calendar.getTime());
       link.href = URL.createObjectURL(file);
       link.download = "config.json";
       link.click();
       URL.revokeObjectURL(link.href);
-    };
+    }
     </script>
   </div>
 </div>
