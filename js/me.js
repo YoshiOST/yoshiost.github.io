@@ -18,8 +18,12 @@ $.toast({
 	showProgress: 'bottom'
 })
 ;
-}
 
+}
+$('.image')
+  .popup({
+  })
+;
 /*
 A simple, lightweight jQuery plugin for creating sortable tables.
 https://github.com/kylefox/jquery-tablesort
