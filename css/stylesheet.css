@@ -3,6 +3,11 @@
   background-color: #657153;
 }
 
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
