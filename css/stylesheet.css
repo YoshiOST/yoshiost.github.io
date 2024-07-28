@@ -150,3 +150,7 @@ p:empty {
 strong:empty {
   display: none;
 }
+
+.popup {
+  z-index: 3;
+}
