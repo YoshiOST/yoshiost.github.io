@@ -22,7 +22,7 @@ body {
 #top-logo {
   width: clamp(30px, 3vw, 60px) !important;
   border-radius: 4px 10px 4px;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .date{
@@ -142,17 +142,7 @@ body > div.header > div > div > div.ui.borderless.icon.menu {
   position: sticky;
   top: 0px;
   position: -webkit-sticky;
-  z-index: 2;
-/*
-  animation: fadescroll 1s linear;
-  animation-name: fadescroll;
-  animation-duration: fadescroll 1ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  background-color: rgba(101, 113, 83,0);
-  animation-timeline: scroll(block nearest)
-   */
-
+  z-index: 1;
 }
 .ui.menu .item {
   height: inherit;
@@ -160,18 +150,4 @@ body > div.header > div > div > div.ui.borderless.icon.menu {
 
 #navcontainer{
 
-}
-
-/* @keyframes fadescroll {
-  0% {background-color: rgba(101, 113, 83,0);}
-  20% {background-color: rgba(101, 113, 83,1);}
-  100% {background-color: rgba(101, 113, 83,1);}
-} */
-
-p:empty {
-  display: none;
-}
-
-strong:empty {
-  display: none;
 }

@@ -13,19 +13,28 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
   <script src="../semantic/dist/semantic.min.js"></script>
+  <script src="/js/menu.js"></script>
 <link rel="stylesheet" type="text/css" href="/font/stylesheet.css">
 <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
 </head>
 <body style="background-image: url(img/profile-bg.png) ; background-repeat:repeat ; background-size: auto ; background-color: #c6e9af">
-  <div class="header">
+  <div class="superheader">
     <div class="ui top borderless stackable nav menu">
-      <div class="ui container">
+      <div id="navcontainer" class="ui container">
         <div class="item">
           <a href="index.html">
-            <img class="grower" id="top-logo" src="/img/profile.png">
+            <img alt="YoshiOST headshot and link to home page"class="grower" id="top-logo" src="/img/profile.png">
           </a>
+          <div class="middle">
+          </div>
+          <div class="mobile right menu">
+            <label class="mobile expander" for='menu' tabindex="0">
+            <i class="hamburger icon"></i>
+            </label>
+            <input id='menu' type='checkbox' />
+          </div>
         </div>
-        <div class="right borderless menu">
+        <div class="right borderless menu" id="togglemenu">
           <div class="ui simple dropdown item">
             Music
             <i class="dropdown icon"></i>
@@ -70,8 +79,6 @@
           <a href="/posts/post" class="item">
             Blog
           </a>
-        </div>
-        <div class="ui borderless icon stackable menu">
           <a class="item" href="https://twitter.com/getYoshiOST" aria-label="twitter link">
             <i class="twitter icon"></i>
           </a>
@@ -79,7 +86,7 @@
             <i class="twitch icon"></i>
           </a>
           <a class="item" href="https://www.youtube.com/@yoshiost"  aria-label="youtube link">
-            <i class="youtube red icon"></i>
+            <i class="youtube icon"></i>
           </a>
           <a class="item" href="https://www.instagram.com/yoshiost/" aria-label="instagram link">
             <i class="instagram icon"></i>

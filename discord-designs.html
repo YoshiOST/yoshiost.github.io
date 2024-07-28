@@ -13,19 +13,28 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
   <script src="../semantic/dist/semantic.min.js"></script>
+  <script src="/js/menu.js"></script>
 <link rel="stylesheet" type="text/css" href="/font/stylesheet.css">
 <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
 </head>
 <body style="background-image: url() ; background-repeat: ; background-size:  ; background-color: #5865F2">
-  <div class="header">
+  <div class="superheader">
     <div class="ui top borderless stackable nav menu">
-      <div class="ui container">
+      <div id="navcontainer" class="ui container">
         <div class="item">
           <a href="index.html">
-            <img class="grower" id="top-logo" src="/img/profile.png">
+            <img alt="YoshiOST headshot and link to home page"class="grower" id="top-logo" src="/img/profile.png">
           </a>
+          <div class="middle">
+          </div>
+          <div class="mobile right menu">
+            <label class="mobile expander" for='menu' tabindex="0">
+            <i class="hamburger icon"></i>
+            </label>
+            <input id='menu' type='checkbox' />
+          </div>
         </div>
-        <div class="right borderless menu">
+        <div class="right borderless menu" id="togglemenu">
           <div class="ui simple dropdown item">
             Music
             <i class="dropdown icon"></i>
@@ -70,8 +79,6 @@
           <a href="/posts/post" class="item">
             Blog
           </a>
-        </div>
-        <div class="ui borderless icon stackable menu">
           <a class="item" href="https://twitter.com/getYoshiOST" aria-label="twitter link">
             <i class="twitter icon"></i>
           </a>
@@ -79,7 +86,7 @@
             <i class="twitch icon"></i>
           </a>
           <a class="item" href="https://www.youtube.com/@yoshiost"  aria-label="youtube link">
-            <i class="youtube red icon"></i>
+            <i class="youtube icon"></i>
           </a>
           <a class="item" href="https://www.instagram.com/yoshiost/" aria-label="instagram link">
             <i class="instagram icon"></i>
@@ -91,51 +98,53 @@
   <div id="content" class="ui container">
     <p><strong><h1 class="ui center aligned header">Discord</h1></strong></p>
 <div class="ui container">
-    <div class="ui stackable three cards">
-      <div class="grower ui fluid card">
-        <div class="image">
-          <a href="https://twitter.com/getYoshiOST"><img class="ui fluid image" data-content="click to go to twitter" src="/img/twitter.com_getyoshiost.png"></a>
-        </div>
-        <div class="content">
-          <a class="header" href="https://twitter.com/getYoshiOST">@getYoshiOST</a>
-          <div class="meta">
-            <span class="date">updated ‎September ‎21, ‎2023</span>
-          </div>
-          <div class="description">
-            profile icon, banner
-          </div>
-        </div>
-      </div>
-      <div class="grower ui fluid card">
-        <div class="image">
-          <a href="https://twitter.com/RealAcePrestige"><img class="ui fluid image" data-content="click to go to twitter" src="/img/twitter.com_Ace_Prestige.png"></a>
-        </div>
-        <div class="content">
-          <a class="header" href="https://twitter.com/RealAcePrestige">@RealAcePrestige</a>
-          <div class="meta">
-            <span class="date">updated ‎September ‎22, ‎2023</span>
-          </div>
-          <div class="description">
-            banner
-          </div>
-        </div>
-      </div>
-      <div class="grower ui fluid card">
-        <div class="image">
-          <a href="https://twitter.com/thelavaburner"><img class="ui fluid image" data-content="click to go to twitter" src="/img/twitter.com_TheLavaBurner.png"></a>
-        </div>
-        <div class="content">
-          <a class="header" href="https://twitter.com/thelavaburner">@TheLavaBurner/@lava_burner</a>
-          <div class="meta">
-            <span class="date">updated March ‎24, ‎2021</span>
-          </div>
-          <div class="description">
-            profile icon, banner
-          </div>
-        </div>
+  <div class="ui stackable grid">
+    <div class="four wide computer eight wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125160/Skyblock_Event_l9wyun.png" alt="">
       </div>
     </div>
-</div>
+    <div class="four wide computer eight wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125166/Kartrider_Event_nll09k.png" alt="">
+      </div>
+    </div>
+    <div class="four wide computer eight wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125180/RL_Weekly_Banner_B_gj3vps.png" alt="">
+      </div>
+    </div>
+    <div class="four wide computer eight wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125191/GWTM_-_Kart_Rider_and_Fortnite_jdetqn.png" alt="">
+      </div>
+    </div>
+    <div class="four wide computer eight wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125207/Easter_Event_cazxcp.png" alt="">
+      </div>
+    </div>
+    <div class="four wide computer eight wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125267/NEW_Graphics_SC_2023_promo_wnymtv.png" alt="">
+      </div>
+    </div>
+    <div class="four wide computer sixteen wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125209/Valheim_Event_jkkm0f.png" alt="">
+      </div>
+    </div>
+    <div class="sixteen wide computer sixteen wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125227/Genesis_Bible_Study_qdlpq9.png" alt="">
+      </div>
+    </div>
+    <div class="sixteen wide computer sixteen wide tablet six wide mobile column">
+      <div class="image">
+        <img class="ui fluid image" src="https://res.cloudinary.com/dnut6ihl8/image/upload/v1722125121/Blue_and_Purple_Dark_Retro_Gaming_Event_Flyer_fix_ypoqii.png" alt="">
+      </div>
+    </div>
+  </div>
 </div>
 
   </div>
