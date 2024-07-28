@@ -1,177 +1,63 @@
-.ui.nav.menu {
-  height: fit-content;
-  background-color: #65715300;
+@font-face {
+  font-family: 'peace_sansregular';
+  src: url('peace_sans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+.ui.menu {
+  font-family: 'peace_sansregular' !important;
 }
 
 body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height:auto;
+  font-family: 'peace_sansregular'
 }
 
-#content {
-  margin-top: 1em;
-  margin-bottom: 11em;
+.item {
+  color: white !important;
+  font-size: clamp(10px, 2vw, 15px) !important;
 }
 
-#top-logo {
-  width: clamp(30px, 3vw, 60px) !important;
-  border-radius: 4px 10px 4px;
-  transition: 0.2s ease-in-out;
+hl.item:hover {
+  color: #657153 !important;
+  font-size: clamp(10px, 2vw, 15px) !important;
 }
 
-.date{
-  color: rgb(101 113 83 / 94%);
+.ui.dropdown {
+  font-size: clamp(10px, 2vw, 15px) !important;
 }
 
-.category{
-  color: rgb(101 113 83 / 94%);
+.ui.dropdown .item {
+  color: black !important;
+}
+.ui.dropdown .item:hover {
+  color: black !important;
 }
 
-/* #iframe {  position: absolute; float: left; clear: both; width: 100%; height: 350px; z-index: 0; } */
-
-.grower:hover {
-  transform: scale(1.1);
+.ui.dropdown .item:hover {
+  color: #657153 !important;
+  font-size: clamp(10px, 2vw, 15px) !important;
 }
 
-@media screen and (min-width: 0) and (max-width: 400px) {
-  #my-content { display: block; }  /* show it on small screens */
-}
-
-@media screen and (min-width: 401px) and (max-width: 1024px) {
-  #my-content { display: none; }   /* hide it elsewhere */
-
-}
-
-.mobile.expander { display: none; }
-
-@media only screen and (max-width: 767.98px) {
-    .mobile.expander { display: block; }
-    #togglemenu:not(.visible){
-      display:none;
-    }
-    .ui.stackable.menu .item {
-      width: inherit !important;
-    }
-}
-
-.hl {
-  display: inline-block;
-  position: relative;
-  color: #657153;
-}
-
-strong {
-  position: relative;
-}
-
-strong::before {
-  /* Highlight color */
-  background-color: #c6e9af;
-  content: "";
-  position: absolute;
-  width: calc(100% + 10px);
-  height: 110%;
-  left: -5px;
-  bottom: 0;
-  z-index: -1;
-  transform: rotate(-2deg);
-}
-
-.hl::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #657153;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hl:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.ui.table > thead > tr > th {
-  background-color: #85c2ff;
-}
-
-.ui[class*="column"].grid > .column:not(.row),
-.ui[class*="column"].grid > .row > .column {
-  display: flex;
-  align-items: center;
-}
-
-/*
-body > div.header > div > div > div.ui.borderless.icon.menu {
-  background-color: white;
-}
-*/
-
-
-[class*="header"] input[type='checkbox'], [class*="header"] label {
-    display: none;
-}
-
-[class*="header"] label {
-    text-align: right;
-    display: block;
-    padding: 0.5em;
-    line-height: 1.6em;
-    align-self: center;
-}
-
-.menu {
-  display: none;
-}
-
-.middle {
-  flex: auto;
-}
-
-.superheader {
-  position: sticky;
-  top: 0px;
-  position: -webkit-sticky;
-  z-index: 2;
-/*
-  animation: fadescroll 1s linear;
-  animation-name: fadescroll;
-  animation-duration: fadescroll 1ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  background-color: rgba(101, 113, 83,0);
-  animation-timeline: scroll(block nearest)
-   */
-
-}
 .ui.menu .item {
-  height: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-#navcontainer{
-
+.ui.icon.menu .item {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-/* @keyframes fadescroll {
-  0% {background-color: rgba(101, 113, 83,0);}
-  20% {background-color: rgba(101, 113, 83,1);}
-  100% {background-color: rgba(101, 113, 83,1);}
+.block {
+  height: 113px;
+}
+
+#content .item {
+  color: black !important;
+}
+
+/* button>a, a:hover, a:visited, a:active {
+color: inherit;
+text-decoration: none;
 } */
-
-p:empty {
-  display: none;
-}
-
-strong:empty {
-  display: none;
-}
