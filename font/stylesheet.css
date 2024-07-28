@@ -13,25 +13,6 @@ body {
   font-family: 'peace_sansregular'
 }
 
-/*
-.twitter.icon {
-  color: #1DA1F2;
-}
-
-.twitch.icon {
-  color: #9146FF;
-}
-
-.instagram.icon {
-  color: black;
-}
-
-.tiktok.icon {
-  color: black;
-}
-*/
-
-
 .item {
   color: white !important;
   font-size: clamp(10px, 2vw, 15px) !important;
