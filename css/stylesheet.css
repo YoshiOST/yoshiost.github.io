@@ -11,6 +11,7 @@ p {
 body {
   background-size: cover;
   background-repeat: no-repeat;
+  height:unset;
 }
 
 #content {
@@ -36,26 +37,7 @@ body {
   transform: scale(1.1);
 }
 
-@media screen and (min-width: 0) and (max-width: 400px) {
-  #my-content { display: block; }  /* show it on small screens */
-}
-
-@media screen and (min-width: 401px) and (max-width: 1024px) {
-  #my-content { display: none; }   /* hide it elsewhere */
-
-}
-
 .mobile.expander { display: none; }
-
-@media only screen and (max-width: 767.98px) {
-    .mobile.expander { display: block; }
-    #togglemenu:not(.visible){
-      display:none;
-    }
-    .ui.stackable.menu .item {
-      width: inherit !important;
-    }
-}
 
 .hl {
   display: inline-block;
@@ -152,4 +134,25 @@ strong:empty {
 
 .popup {
   z-index: 3;
+}
+
+
+@media screen and (min-width: 0) and (max-width: 400px) {
+  #my-content { display: block; };  /* show it on small screens */
+  body { height:unset; };
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  #my-content { display: none; }   /* hide it elsewhere */
+
+}
+
+@media only screen and (max-width: 767.98px) {
+    .mobile.expander { display: block; }
+    #togglemenu:not(.visible){
+      display:none;
+    }
+    .ui.stackable.menu .item {
+      width: inherit !important;
+    }
 }
