@@ -1,6 +1,24 @@
+.video-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .ui.nav.menu {
   height: fit-content;
   background-color: #65715300;
+}
+
+#footer {
+  background-color: #657153;
+}
+
+#content {
+  flex-grow: 1;
 }
 
 p {
@@ -11,6 +29,9 @@ p {
 body {
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
   height:unset;
 }
 

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Licensing</title>
-  <meta property="og:title" content="Licensing" />
+  <title>Meteonook Weather Data Simplifier</title>
+  <meta property="og:title" content="Meteonook Weather Data Simplifier" />
   <meta property="og:image" content="https://res.cloudinary.com/dnut6ihl8/image/upload/c_thumb,w_200,g_face/v1722168341/profile_lddfak.png" />
   <meta property="og:description" content="" />
   <meta name="theme-color" content="#ceffc6">
@@ -19,9 +19,9 @@
   <noscript>
     <link rel="stylesheet" type="text/css" href="/css/noscript.css">
   </noscript>
-  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="css/stars.css">
 </head>
-<body style="background-image: url(img/yoshiost-bg.png) ; background-repeat: ; background-size:  ; background-color: #c6e9af">
+<body style="background-image: url() ; background-repeat: ; background-size:  ; background-color: #1d2432">
   <div class="superheader">
     <div class="ui top borderless stackable nav menu">
       <div id="navcontainer" class="ui container">
@@ -97,54 +97,53 @@
     </div>
   </div>
   <div id=content class="ui container">
-    <p><strong><h1 class="ui center aligned header">Licensing</h1></strong></p>
-<div class="ui attached segment">
-  <p></p>
-<div class="ui bulleted list">
-  <div class="item">
-    <div>When you buy any Andrew Cheung, YoshiOST or OSBooter music/media, it is for personal
-    entertainment use.</div>
-    <div class="list">
-      <div class="item">
-        You may <span class="ui large red text">NOT</span> sell it
-        as your own or misidentify who made the track or what the track name
-        is.
+    <div class="night">
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+</div>
+<div class="ui container">
+  <h1 class="ui inverted header">Meteonook 🌟 Extractor</h1>
+  <!-- HTML5 Video Placeholder -->
+  <div class="video-container">
+    <video poster="https://res.cloudinary.com/dnut6ihl8/image/upload/v1725079329/tn_xgsycj.jpg" controls preload="metadata">
+      <source src="https://res.cloudinary.com/dnut6ihl8/video/upload/v1725069630/video_jned48.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="ui form">
+      <div class="field">
+        <h2 class="ui inverted header">Input Text</h2>
+        <textarea id="inputText" class="ui textarea" placeholder="Enter your data here..."></textarea>
       </div>
-      <div class="item">
-        You may <span class="ui large red text">NOT</span> monetize any media with the
-        <span class="ui large red text">audio/video</span> in full or in
-        part.
+      <div class="button-group">
+        <button class="ui primary button" onclick="processLines()">Clean up data</button>
+        <button class="ui right button" onclick="copyToClipboard()">Copy to Clipboard</button>
       </div>
-      <div class="item">
-        Do <span class="ui large red text">NOT</span> stream the song as background music for
-        livestreams or use in DJ sets (public performance) unless it is tracked as for
-        performance rights.
+      <div class="field" style="margin-top: 20px;">
+        <h2 class="ui inverted header">Input Text</h2>
+        <textarea id="outputText" class="ui textarea" placeholder="Results" readonly></textarea>
       </div>
-      <div class="item">
-        The only <span class="ui large orange text">exceptions</span> are
-        for critique/journalism as examples (gist), however would <span class="ui large red text">exclude</span> using the
-        whole song straight.
-      </div>
-      <div class="item">
-        There are <span class="ui large blue text">licenses for commercial uses</span>, such
-        as <span class="ui large text">video games/movies/videos</span>.
-      </div>
-      <div class="item">
-        Alternatively you must
-        <span class="ui large blue text">get expressed written/typed permission</span>.
+      <h2 class="ui inverted header">What to do next...</h2>
+      <div class="ui fluid segment">
+        <span class="ui large text">Once you have all your data cleaned up, you can use the autohotkey tool provided on github!
+          <br>
+          <br>
+          check out Yusuke Nakaya's Shooting Star animation link <a href="https://codepen.io/YusukeNakaya/pen/XyOaBj">on codepen</a>
+        </span>
       </div>
     </div>
   </div>
-</div>
-</div>
-<a href="https://forms.gle/Kph9vVwc3mk4ZmRJ6">
-<button class="ui animated fade massive black fluid bottom attached button" tabindex="0">
-  <div class="visible content"><i class="icon file signature"></i>Licenses & Contact</div>
- <div class="hidden content">
-   Contact within the week
- </div>
-</button>
-</a>
 
   </div>
   <div id="footer">
@@ -170,7 +169,7 @@
       </div>
     </div>
   </div>
-  <script src=""></script>
+  <script src="js/meteonook-clipboard.js"></script>
   <script src="js/popup.js"></script>
 </body>
 </html>

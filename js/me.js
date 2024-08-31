@@ -1,31 +1,3 @@
-function copyToClipboard(element) {
-// Get the text field
-var copyText = document.getElementById(element);
-
-// Select the text field
-copyText.select();
-copyText.setSelectionRange(0, 99999); // For mobile devices
-
- // Copy the text inside the text field
-navigator.clipboard.writeText(copyText.value);
-
-// Alert the copied text
-$.toast({
-  class: 'teal',
-	position: 'bottom right',
-  showIcon: 'clipboard',
-  message:  '"' + copyText.value + '" was added to your clipboard',
-	showProgress: 'bottom'
-})
-;
-
-}
-$('.image')
-  .popup({
-      inline: true,
-      position: 'bottom left'
-  })
-;
 /*
 A simple, lightweight jQuery plugin for creating sortable tables.
 https://github.com/kylefox/jquery-tablesort
@@ -159,5 +131,3 @@ Version 0.0.11
 
 })(window.Zepto || window.jQuery);
 $('table').tablesort();
-$('.ui.calendar').calendar();
-$('.ui.dropdown').dropdown();
